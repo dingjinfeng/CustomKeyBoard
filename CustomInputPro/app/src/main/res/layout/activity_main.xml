@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <com.example.custominputpro.view.TableView
+        android:id="@+id/input_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        app:cols="6"
+        app:height_gap="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:rows="1"
+        app:width_gap="10">
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="0"
+            app:location_y="0"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.BaseInputView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="1"
+            app:location_y="0"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.BaseInputView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="2"
+            app:location_y="0"
+            app:v_direction="1" >
+
+            <com.example.custominputpro.view.BaseInputView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+    </com.example.custominputpro.view.TableView>
+
+    <com.example.custominputpro.view.TableView
+        android:id="@+id/input_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        app:cols="4"
+        app:height_gap="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:rows="4"
+        app:width_gap="10">
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="3"
+            app:location_y="1"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.FunctionButtonView
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="clear" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="2"
+            app:location_y="3"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.FunctionButtonView
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="cancel" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="3"
+            app:location_y="2"
+            app:v_direction="2">
+
+            <com.example.custominputpro.view.FunctionButtonView
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="OK" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="3"
+            app:location_y="0"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.FunctionButtonView
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="delete" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="0"
+            app:location_y="0"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="1"
+            app:location_y="0"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="2"
+            app:location_y="0"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="0"
+            app:location_y="1"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="1"
+            app:location_y="1"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/five"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="2"
+            app:location_y="1"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/six"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="0"
+            app:location_y="2"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/seven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="1"
+            app:location_y="2"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/eight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="1"
+            app:location_x="2"
+            app:location_y="2"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/nine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+
+        <com.example.custominputpro.view.BaseConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h_direction="2"
+            app:location_x="0"
+            app:location_y="3"
+            app:v_direction="1">
+
+            <com.example.custominputpro.view.NumberButtonView
+                android:id="@+id/zero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0" />
+        </com.example.custominputpro.view.BaseConstraintLayout>
+    </com.example.custominputpro.view.TableView>
+</androidx.constraintlayout.widget.ConstraintLayout>
