@@ -1,1 +1,6 @@
 # CustomKeyBoard
+可以自定义每个按钮横向纵向扩容单元格（假设横向扩容h格，纵向扩容v格，则一共占h*v格）。在该项目中，一个（看到的）格子用BaseConstraintLayout表示，其中location_x和location_y表示该格子在表格中的位置（xy均从0开始），h_direction和v_direction和表示横向和纵向扩容的单元格。TableView则将多个格子包含起来，其中cols和rows表示该表格一共有cols*rows个单元格。
+在每个格子中可以自定义控件等，显示什么均由自己控件。
+
+项目关键文件：TableView和BaseConstraintLayout。若要自定义单元格布局，首先该布局需要定义mLocation_x，mLocation_y，mH_direction， mV_direction，并与xml属性对应起来。最后需要在TableView中将BaseConstraintLayout（文本）替换成对应的类名即可。这里如何添加自定义属性就不说了。
+项目Demo：项目本身就是个Demo....
